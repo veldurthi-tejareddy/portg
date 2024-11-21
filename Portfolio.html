@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Teja Reddy Veldurthi - Data Analyst</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/e674bba739.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Custom Loader Animation -->
+    <div id="loading-screen">
+      <div class="loader"></div>
+      <div class="loading-text">Loading...</div>
+    </div>
+
+    <div id="theme-switcher">
+      <button id="theme-toggle-btn">Switch Theme</button>
+    </div>
+
+    <!-- Main content starts hidden -->
+    <div id="main-content" class="hidden">
+      <div id="header">
+        <div class="container">
+          <nav>
+            <!-- <img src="images/logo.png" class="logo"></img> -->
+            <ul>
+              <!-- <li><a href="#">Home</a></li> -->
+              <li><a id="about-link" href="#about">About</a></li>
+              <li><a href="#services">My Services</a></li>
+              <!-- <li><a href="#experience">Experience</a></li> -->
+              <!-- <li><a href="#education">Education</a></li> -->
+              <li><a href="#portfolio">My Works</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <!-- <i class="fas fa-times"></i> -->
+            </ul>
+            <!-- <i class="fas fa-bars"></i> -->
+          </nav>
+          <div id="fireworks-container"></div>
+          <div class="header-text">
+            <p>Data Analyst</p>
+            <h1>
+              Hi, I'm <span>Teja Reddy</span><br />Turning data into actionable
+              insights!
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Your main content continues here -->
+      <!-- ----------ABOUT---------- -->
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/pp.jpg" alt="Profile Picture" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                Masters in progress from Pace University, I have honed my skills
+                in data management, analysis, and project management. My
+                experience as a Full Stack Developer at LTIMINDTREE, coupled
+                with my work on various data analytics projects, has equipped me
+                with a unique perspective on the entire data pipeline, from
+                collection to visualization.
+              </p>
+
+              <!-- Tab titles (links) -->
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="openTab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="openTab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="openTab('education')">
+                  Education
+                </p>
+              </div>
+
+              <!-- Skills Section -->
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Java:</span><br />Proficient in data analysis and web
+                    development.
+                  </li>
+                  <li>
+                    <span>R:</span><br />Proficient in statistical modeling and
+                    data visualization.
+                  </li>
+                  <li>
+                    <span>SQL:</span><br />Advanced skills in database querying,
+                    management, and optimization.
+                  </li>
+                  <li>
+                    <span>JavaScript:</span><br />Proficient in web application
+                    development and testing.
+                  </li>
+                  <li>
+                    <span>AWS & MS Azure:</span><br />Knowledgeable in cloud
+                    computing and services.
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Experience Section -->
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>Jan 2022 - July 2023</span><br />
+                    <strong
+                      >Java Full Stack Engineer, LTIMINDTREE, Chennai,
+                      India</strong
+                    >
+                    <ul>
+                      <li>
+                        Developed and maintained complex web applications using
+                        Java, Spring Boot, and Angular.
+                      </li>
+                      <li>
+                        Collaborated with cross-functional teams to design and
+                        implement scalable software solutions.
+                      </li>
+                      <li>
+                        Enhanced application performance by optimizing code and
+                        implementing best practices.
+                      </li>
+                      <li>
+                        Participated in code reviews and provided constructive
+                        feedback to peers.
+                      </li>
+                      <li>
+                        Delivered comprehensive documentation and conducted
+                        training sessions for new team members.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span>Jan 2021 - Dec 2021</span><br />
+                    <strong
+                      >Management Trainee, Noida Metro Rail Corporation, Noida,
+                      India</strong
+                    >
+                    <ul>
+                      <li>
+                        Gained valuable insights during internship, including
+                        system control and operations, adherence to quality
+                        standards, and metro work culture.
+                      </li>
+                      <li>
+                        Implemented safety protocols, optimized costs, and
+                        contributed to various metro projects.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Education Section -->
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>Expected May 2025</span><br />M.S. Information
+                    Systems, Pace University, Brooklyn, NY<br />GPA: 3.7
+                  </li>
+                  <li>
+                    <span>June 2016 - May 2020</span><br />B.Tech in Civil
+                    Engineering, G.Pullaih College of Engineering and
+                    Technology<br />GPA: 7.8
+                  </li>
+                </ul>
+              </div>
+              <!-- <div id="gyroscope-effect" style="height: 200px; text-align: center; background: #f4f4f4;">
+                <p>Gyroscope interaction will display here...</p>
+              </div> -->
+            </main>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------SERVICES---------- -->
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-brands fa-android"></i>
+              <h2>Data Analysis</h2>
+              <p>
+                I use Java, R, and SQL to analyze data and extract meaningful
+                insights.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Data Visualization</h2>
+              <p>
+                I use tools like Tableau and PowerBI to visualize data and make
+                it understandable for everyone.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------PORTFOLIO--------- -->
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Works</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="images/BPR.jpg" alt="" />
+              <div class="layer">
+                <h2>Volkswagen BPR: Process Innovation Management</h2>
+                <p>
+                  Optimized Volkswagen's automobile process, eliminating 20% of
+                  inefficiencies and saving the company $500k annually.
+                </p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/Netflix_stats.png" alt="" />
+              <div class="layer">
+                <h2>Netflix Data Dynamics: Real-Time Analytics</h2>
+                <p>
+                  Developed a machine learning algorithm for real-time data
+                  analytics, achieving 95% accuracy.
+                </p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/trade.jpg" alt="" />
+              <div class="layer">
+                <h2>TradeMaster: Online Trading Platform Development</h2>
+                <p>
+                  Developed a comprehensive online trading platform enabling
+                  users to execute virtual trades.
+                </p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+          <a href="" class="btn">See more</a>
+        </div>
+      </div>
+
+      <!-- ----------CONTACT---------- -->
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fas fa-paper-plane"></i> sv12757n@pace.edu</p>
+              <p><i class="fas fa-phone-square-alt"></i> +1 (201)-241-9407</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/veldurthi-tejareddy"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/tejaredie"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </div>
+              <a href="images/Resume1.docx" download class="btn btn2"
+                >Download CV</a
+              >
+            </div>
+            <div class="contact-right">
+              <form>
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
+                <button type="submit" class="btn btn3">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of main content -->
+
+    <!-- JavaScript to handle the loading screen -->
+    <script>
+      document
+        .getElementById("about-link")
+        .addEventListener("click", function (e) {
+          e.preventDefault(); // Prevent default anchor behavior
+          const aboutSection = document.querySelector("#about");
+
+          // Trigger the firecracker effect
+          triggerFireworks();
+
+          // Smoothly scroll to the About section after a short delay
+          setTimeout(() => {
+            aboutSection.scrollIntoView({ behavior: "smooth" });
+          }, 1000); // Adjust timing to match firecracker animation
+        });
+
+      function triggerFireworks() {
+        const container = document.getElementById("fireworks-container");
+        container.innerHTML = ""; // Clear previous fireworks
+
+        for (let i = 0; i < 20; i++) {
+          const firework = document.createElement("div");
+          firework.className = "firework";
+          firework.style.left = `${Math.random() * 100}vw`;
+          firework.style.top = `${Math.random() * 100}vh`;
+          firework.style.backgroundColor = getRandomColor();
+          container.appendChild(firework);
+        }
+
+        // Remove fireworks after animation
+        setTimeout(() => {
+          container.innerHTML = "";
+        }, 1000);
+      }
+
+      function getRandomColor() {
+        const colors = [
+          "#FF5733",
+          "#FFC300",
+          "#DAF7A6",
+          "#C70039",
+          "#900C3F",
+          "#581845",
+        ];
+        return colors[Math.floor(Math.random() * colors.length)];
+      }
+
+      function openTab(tabName) {
+        // Hide all tab contents
+        const tabContents = document.querySelectorAll(".tab-contents");
+        tabContents.forEach((content) => {
+          content.classList.remove("active-tab");
+        });
+
+        // Remove active class from all tab links
+        const tabLinks = document.querySelectorAll(".tab-links");
+        tabLinks.forEach((link) => {
+          link.classList.remove("active-link");
+        });
+
+        // Show the selected tab and set the active class on the clicked tab link
+        document.getElementById(tabName).classList.add("active-tab");
+        event.currentTarget.classList.add("active-link");
+      }
+      window.addEventListener("load", function () {
+        const loadingScreen = document.getElementById("loading-screen");
+        const mainContent = document.getElementById("main-content");
+
+        // Add a small delay to give a smooth transition
+        setTimeout(() => {
+          loadingScreen.classList.add("fade-out");
+          mainContent.classList.remove("hidden");
+        }, 1000); // Delay of 1 second
+      });
+    
+document.addEventListener("DOMContentLoaded", () => {
+  requestDeviceOrientation();
+});
+
+function requestDeviceOrientation() {
+  if (window.DeviceOrientationEvent) {
+    if (typeof DeviceOrientationEvent.requestPermission === "function") {
+      DeviceOrientationEvent.requestPermission()
+        .then((response) => {
+          if (response === "granted") {
+            startDeviceOrientation();
+          } else {
+            alert("Permission denied for motion sensors.");
+          }
+        })
+        .catch((err) => console.error("Permission request failed:", err));
+    } else {
+      startDeviceOrientation();
+    }
+  } else {
+    alert("Device orientation is not supported on this device or browser.");
+  }
+}
+
+function startDeviceOrientation() {
+  window.addEventListener("deviceorientation", handleDeviceOrientation);
+}
+
+function handleDeviceOrientation(event) {
+  const gammaElement = document.getElementById("gamma-value");
+  const betaElement = document.getElementById("beta-value");
+  const alphaElement = document.getElementById("alpha-value");
+
+  if (gammaElement) gammaElement.textContent = event.gamma ? event.gamma.toFixed(2) : "N/A";
+  if (betaElement) betaElement.textContent = event.beta ? event.beta.toFixed(2) : "N/A";
+  if (alphaElement) alphaElement.textContent = event.alpha ? event.alpha.toFixed(2) : "N/A";
+
+  const gyroscopeEffect = document.getElementById("gyroscope-effect");
+  if (event.gamma > 10) {
+    gyroscopeEffect.style.backgroundColor = "rgba(255, 0, 0, 0.5)"; // Tilt right
+  } else if (event.gamma < -10) {
+    gyroscopeEffect.style.backgroundColor = "rgba(0, 0, 255, 0.5)"; // Tilt left
+  } else {
+    gyroscopeEffect.style.backgroundColor = "#f4f4f4"; // Neutral position
+  }
+}
+
+
+
+
+    </script>
+  </body>
+</html>
